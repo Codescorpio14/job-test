@@ -1,0 +1,39 @@
+@use "reset" as *;
+
+.card-list{
+    background-color: $card-bg;
+    padding: 1rem .5rem ;
+    min-width: 350px;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+
+    .card-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+        h3{
+            text-transform: capitalize;
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+
+            span{
+                width: 20px;
+                aspect-ratio: 1;
+                display: block;
+                border-radius: 10px 0 0 10px;
+            }
+
+        }
+
+        p{
+            background-color: rgb(216, 236, 255);
+            padding: .25rem .5rem;
+            border-radius: 20%;
+            font-weight: bold;
+        }
+    }
+}
